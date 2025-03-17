@@ -51,15 +51,15 @@ export function Product({ product }: ProductProps) {
         <div>
           <p>
             Category:{" "}
-            <span style={{ fontWeight: "bold" }}>{product.category}</span>
+            <span style={{ fontWeight: "bold" }}>{product?.category}</span>
           </p>
           <p>
             Rating:{" "}
-            <span style={{ fontWeight: "bold" }}>{product.rating.rate}</span>
+            <span style={{ fontWeight: "bold" }}>{product?.rating?.rate}</span>
           </p>
           <p>
             Rating Count:{" "}
-            <span style={{ fontWeight: "bold" }}>{product.rating.count}</span>
+            <span style={{ fontWeight: "bold" }}>{product?.rating?.count}</span>
           </p>
 
           <p>{product.description}</p>
